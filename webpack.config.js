@@ -23,15 +23,13 @@ module.exports = {
     // update on file change
     module: {
         rules: [{
-            test: /\.css$/i,
-            use: ['style-loader', {
-                loader: 'css-loader',
-                // allow imports in css files for postcss
-                options: {
-                    importLoaders: 1
-                }
-            }, 'postcss-loader']
-        }]
+                test: /\.css$/i,
+                use: ['style-loader', {
+                    loader: 'css-loader',
+                }, 'postcss-loader']
+            },
+
+        ]
     },
 
 }
