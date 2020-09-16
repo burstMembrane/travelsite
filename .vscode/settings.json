@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "*.css": "scss"
+        "*.css": "scss",
+        "*.js": "javascript"
     },
     "css.validate": false,
     "less.validate": false,
