@@ -1,4 +1,8 @@
 .primary-nav {
+    padding: 10px 0;
+    @mixin atMedium {
+        padding: 0;
+    }
     &--pull-right {
         @mixin atMedium {
             float: right;
@@ -28,8 +32,15 @@
     a {
         color: white;
         text-decoration: none;
+        display: block;
+        padding: 8px 13px;
+        font-size: 0.8rem;
         font-weight: 300;
+        background-color: rgba($mainBlue, 0.8);
+        border-radius: 5px;
         @mixin atMedium {
+            background-color: transparent;
+            font-size: 1rem;
             padding: 12px 0;
         }
     }

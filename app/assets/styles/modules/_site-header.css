@@ -1,5 +1,5 @@
 .site-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -15,6 +15,7 @@
     padding: 10px 0;
     &__button-container {
         @mixin atMedium {
+            padding-top: 10px;
             float: right;
         }
     }
@@ -39,7 +40,6 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: rgb(255, 255, 255);
         @mixin atMedium {
             display: none;
         }
@@ -51,7 +51,7 @@
         z-index: -10;
         position: relative;
         transition: all 0.3s;
-        padding-top: 6.25rem;
+        padding-top: 5.625rem;
         &--is-visible {
             transform: scale(1);
             opacity: 1;
