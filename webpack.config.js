@@ -16,7 +16,11 @@ module.exports = {
         host: '0.0.0.0',
         contentBase: path.join(__dirname, 'app'),
         hot: true,
-        port: 3000
+        port: 3000,
+        stats: {
+            chunks: false,
+            modules: false,
+        }
     },
     // set to development
     mode: 'development',

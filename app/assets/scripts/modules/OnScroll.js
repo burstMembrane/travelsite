@@ -19,7 +19,6 @@ class OnScroll {
         this.scroll = document.documentElement.scrollTop;
         this.scroll >= this.threshold ? this.ifTrue() : this.ifFalse()
     }
-
 }
 
 export default OnScroll;
