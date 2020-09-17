@@ -14,17 +14,18 @@ if (module.hot) {
 
 let menu = new MobileMenu;
 
-const header = document.querySelector('.site-header')
+const header = document.querySelector('.site-header__logo')
 
 const hideNav = () => {
 
-    header.classList.add('hide');
-    header.classList.remove('show');
+    if (!header.classList.contains('hide'))
+        header.classList.add('hide');
+
 
 }
 const showNav = () => {
 
-    header.classList.add('show');
+
     header.classList.remove('hide');
 }
 let windowScroll = new OnScroll({
