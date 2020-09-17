@@ -14,8 +14,6 @@ class MobileMenu {
         this.siteHeader.classList.toggle("site-header--is-expanded")
         this.menuIcon.classList.toggle("site-header__menu-icon--close-x")
     }
-
-
 }
 
 export default MobileMenu;

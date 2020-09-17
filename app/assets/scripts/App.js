@@ -16,8 +16,8 @@ const hideNav = () => !header.classList.contains('hide') ? header.classList.add(
 const showNav = () => header.classList.remove('hide')
 
 
-
-let revealOnScroll = new RevealOnScroll()
+new RevealOnScroll(document.querySelectorAll('.feature-item'), 75)
+new RevealOnScroll(document.querySelectorAll('.testimonial'), 95)
 
 let windowScroll = new OnScroll({
     threshold: 300,

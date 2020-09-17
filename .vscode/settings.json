@@ -1,11 +1,12 @@
 {
-    "files.associations": {
-        "*.css": "scss",
-        "*.js": "javascript"
-    },
-    "css.validate": false,
-    "less.validate": false,
-    "scss.validate": false,
-    "stylelint.enable": true,
-    "stylelint.autoFixOnSave": true,
+  "files.associations": {
+    "*.css": "scss",
+    "*.js": "javascript"
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.enable": true,
+  "stylelint.autoFixOnSave": true,
+  "prettier.tabWidth": 2
 }
