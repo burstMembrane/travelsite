@@ -4,13 +4,14 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
         "dev": "webpack-dev-server"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "lazysizes": "^5.2.2",
         "lodash": "^4.17.20",
         "normalize.css": "^8.0.1"
     },
