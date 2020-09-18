@@ -10,4 +10,6 @@
   "stylelint.autoFixOnSave": true,
   "prettier.tabWidth": 2,
   "prettier.bracketSpacing": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 70
 }

@@ -27,15 +27,15 @@
         position: absolute;
         transition: transform .3s ease-out;
         top: 0;
-        left: 50%;
+        left: 38%;
         padding: 10px 10px;
         border-radius: 5px;
         background-color: rgba($mainBlue, 0.8);
         @mixin atMedium {
             left: auto;
-            transform: translateX(0);
             .site-header--dark & {
-                background-color: ;
+                top: -5px;
+                background-color: transparent;
                 padding: 0;
                 transform: scale(.55);
             }

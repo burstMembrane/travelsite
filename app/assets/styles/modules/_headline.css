@@ -29,6 +29,9 @@
         /* use em on text margins, scales to different font sizes as based on parent text size not root like rem */
         margin-bottom: .5em;
     }
+    &--t-margin-small {
+        margin-top: .5em;
+    }
     &--b-margin-large {
         /* use em on text margins, scales to different font sizes as based on parent text size not root like rem */
         margin-bottom: 1.6em;
