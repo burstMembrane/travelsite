@@ -1,36 +1,44 @@
 .site-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
+    width: 100%;
     transition: all 0.3s ease-out;
     &--is-expanded {
         background-color: rgba($mainBlue, 0.55);
     }
     /* postcss rgbahex allows variables inside rgba values */
     @mixin atMedium {
+        position: fixed;
         background-color: rgba($mainBlue, 0.3);
+        &--dark {
+            background-color: rgba($darkNav, 0.8);
+        }
     }
-    width: 100%;
-    padding: 10px 0;
     &__button-container {
         @mixin atMedium {
-            padding-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             float: right;
         }
     }
     &__logo {
+        position: absolute;
+        transition: transform .3s ease-out;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
-        padding: 13px 29px;
+        padding: 10px 10px;
         border-radius: 5px;
         background-color: rgba($mainBlue, 0.8);
-        position: absolute;
         @mixin atMedium {
             left: auto;
             transform: translateX(0);
-            padding: 25px 36px;
+            .site-header--dark & {
+                background-color: ;
+                padding: 0;
+                transform: scale(.55);
+            }
         }
     }
     &__menu-icon {

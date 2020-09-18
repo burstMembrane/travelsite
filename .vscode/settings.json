@@ -8,5 +8,6 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "stylelint.autoFixOnSave": true,
-  "prettier.tabWidth": 2
+  "prettier.tabWidth": 2,
+  "prettier.bracketSpacing": false,
 }

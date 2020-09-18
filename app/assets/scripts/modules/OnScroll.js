@@ -5,6 +5,7 @@
 // ifFalse, a function to run if below threshold
 import throttle from 'lodash/throttle';
 
+
 class OnScroll {
     constructor(config) {
         this.threshold = config.threshold || 300;
@@ -17,6 +18,9 @@ class OnScroll {
     }
     events() {
         window.addEventListener('scroll', this.scrollThrottle)
+        window.addEventListener('resize', debounce(() => {
+            this.browserHeight = window.innerHeight;
+        }, 333))
     }
     handleScroll(e) {
         this.scroll = document.documentElement.scrollTop;

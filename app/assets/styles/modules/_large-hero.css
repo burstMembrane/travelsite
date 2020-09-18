@@ -13,13 +13,14 @@
         text-align: center;
     }
     &__title {
+        padding-top: 40px;
         font-weight: 300;
         color: $mainBlue;
-        font-size: 3.4rem;
+        font-size: 3.0rem;
         margin: 0;
         /* Design for mobile first */
         @mixin atSmall {
-            font-size: 5.8rem;
+            font-size: 4.8rem;
         }
     }
     &__subtitle {
