@@ -6,9 +6,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,4 +30,4 @@ jobs:
           # Specify whether to use npm or yarn to run the tests. May be npm or yarn only defaults to yarn
           package-manager: npm
           # The command you wish to run e.g. test
-          command: build
+          command: run build
