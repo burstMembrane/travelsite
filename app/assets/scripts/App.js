@@ -12,6 +12,7 @@ new StickyHeader();
 new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
 new RevealOnScroll(document.querySelectorAll('.testimonial'), 95);
 
+// define modal as global variable
 let modal;
 
 // only import modal code when user clicks on a link -- saves initial page load.
