@@ -20,5 +20,5 @@ if (currentTask == 'build') {
         preset: 'default',
     }))
 }
-console.log(postCssOpts.plugins.length)
+
 module.exports = postCssOpts;
